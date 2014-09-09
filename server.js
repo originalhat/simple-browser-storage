@@ -1,4 +1,5 @@
 var connect = require('connect');
 var serveStatic = require('serve-static');
-connect().use(serveStatic(__dirname)).listen(8080);
-console.log('server running @ localhost:8080');
+var port = 6060
+connect().use(serveStatic(__dirname)).listen(port);
+console.log('server running @ localhost:' + port);
